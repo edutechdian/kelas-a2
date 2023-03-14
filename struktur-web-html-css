@@ -3,7 +3,6 @@
     <title>latihan css</title>
 
     <style>
-        /* komentar */
     *{margin: 0px;
         padding: 10px;
         box-sizing: border-box;
@@ -15,11 +14,11 @@
         background-color: rgb(56, 54, 133);}
 
     header{
-        background: linear-gradient(to right, violet, pink);
+        background: linear-gradient(to right, pink, purple);
+        font-size: 14pt;
         display: flex;
         flex: 2;
-        justify-content: space-between;
-        }
+        justify-content: space-between;}
 
     main{
         background-color: lightgreen;
@@ -33,28 +32,25 @@
         column-gap: 10px;}
 
     footer{
-        background: linear-gradient(to top, violet, lime);
+        background-color: palevioletred;
         display: flex;
         flex: 1;}
 
     aside{
         background-color: cornflowerblue;
-        width: 20%;
-        }
+        width: 20%;}
 
     article{
         background-color: silver;
         width: 100%;}
 
-    ul{display: flex;
-        list-style: none;}
+    img{height: 50%;
+        float: right;
+        margin-right: 10px;}
 
-    li{margin-right: 5px;}
+    p{text-align: justify;}
 
-    img{height:70%;
-        display:block;
-        margin-left: auto;
-        margin-right: auto;}
+    
 
     </style>
 
@@ -62,28 +58,35 @@
 
 <body>
     <header>
-        <h1>Logo</h1>
+       <img style="height: 100px;" src="logo uny.png" alt="">
         <nav>
-            <ul>
-                <li><a href="link1.html">Home</a> </li>
-                <li><a href="link2.html">About</a> </li>
-                <li><a href="link1.html">Contact</a> </li>
-            </ul>
+            <a href="link1.html">Menu</a>
+            <a href="link2.html">Search</a>
+            <a href="link1.html">Bantuan</a>
         </nav>
     </header>
 
     <main>
+
         <aside>
-            <a href="#">konten 1</a>
+            <a class="sidebar" href="#">Daftar Mata Kuliah</a>
+        <br>
+            <a class="sidebar" href="#">Jam</a>
+        <br>
+            <a class="sidebar" href="#">Data Dosen</a>
+          
         </aside>
+
         <section>
-            <article>
-                <img src="https://picsum.photos/id/102/200/300" alt="">
+            <article>konten 1
+                <p>Dieng Plateau <img src="https://picsum.photos/id/102/200/300" alt="">atau dataran tinggi Dieng adalah salah satu situs bersejarah paling terkenal di Indonesia. Dataran ini sudah tidak asing lagi bagi masyarakat Indonesia, karena dikenal dengan pesona alamnya yang indah di Pulau Jawa yang dikelilingi oleh hijau pegunungan dan hamparan awan. Hal itu membuat Dieng memiliki udara dingin yang segar. Selain alamnya yang elok tiada dua, Dieng juga menyimpan banyak objek wisata geologi dan sejarah yang menarik untuk dikunjungi. Beberapa tempat wisata di Dieng yaitu kawah, telaga, dan komplek kawasan Candi Hindu yang mampu menarik para wisatawan untuk berkunjung kembali. Bukan hanya dikenal oleh negeri sendiri, namun nama Dieng juga telah bergaung hingga ke negeri seberang.
+                    
+                </p>
             </article>
-            <article>
+            <article>konten 2
                 <img src="https://picsum.photos/id/101/200/300" alt="">
             </article>
-            <article>
+            <article>konten 3
                 <img src="https://picsum.photos/id/100/200/300" alt="">
             </article>
         </section>
