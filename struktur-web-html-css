@@ -3,6 +3,7 @@
     <title>latihan css</title>
 
     <style>
+        /* komentar */
     *{margin: 0px;
         padding: 10px;
         box-sizing: border-box;
@@ -14,10 +15,11 @@
         background-color: rgb(56, 54, 133);}
 
     header{
-        background-color: yellow;
-        font-size: 30pt;
+        background: linear-gradient(to right, violet, pink);
         display: flex;
-        flex: 2;}
+        flex: 2;
+        justify-content: space-between;
+        }
 
     main{
         background-color: lightgreen;
@@ -31,31 +33,59 @@
         column-gap: 10px;}
 
     footer{
-        background-color: palevioletred;
+        background: linear-gradient(to top, violet, lime);
         display: flex;
         flex: 1;}
 
     aside{
         background-color: cornflowerblue;
-        width: 20%;}
+        width: 20%;
+        }
 
     article{
         background-color: silver;
         width: 100%;}
+
+    ul{display: flex;
+        list-style: none;}
+
+    li{margin-right: 5px;}
+
+    img{height:70%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;}
 
     </style>
 
 </head>
 
 <body>
-    <header>header</header>
+    <header>
+        <h1>Logo</h1>
+        <nav>
+            <ul>
+                <li><a href="link1.html">Home</a> </li>
+                <li><a href="link2.html">About</a> </li>
+                <li><a href="link1.html">Contact</a> </li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <aside>sidebar</aside>
+        <aside>
+            <a href="#">konten 1</a>
+        </aside>
         <section>
-            <article>konten 1</article>
-            <article>konten 2</article>
-            <article>konten 3</article>
+            <article>
+                <img src="https://picsum.photos/id/102/200/300" alt="">
+            </article>
+            <article>
+                <img src="https://picsum.photos/id/101/200/300" alt="">
+            </article>
+            <article>
+                <img src="https://picsum.photos/id/100/200/300" alt="">
+            </article>
         </section>
     </main>
 
